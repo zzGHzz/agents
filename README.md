@@ -9,44 +9,44 @@ This repository contains 28 specialized subagents that extend Claude Code's capa
 ## Available Subagents
 
 ### Development & Architecture
-- **backend-architect** - Design RESTful APIs, microservice boundaries, and database schemas
-- **frontend-developer** - Build React components, implement responsive layouts, and handle client-side state management
-- **mobile-developer** - Develop React Native or Flutter apps with native integrations
-- **graphql-architect** - Design GraphQL schemas, resolvers, and federation
-- **architect-reviewer** - Reviews code changes for architectural consistency and patterns
+- **[backend-architect](backend-architect.md)** - Design RESTful APIs, microservice boundaries, and database schemas
+- **[frontend-developer](frontend-developer.md)** - Build React components, implement responsive layouts, and handle client-side state management
+- **[mobile-developer](mobile-developer.md)** - Develop React Native or Flutter apps with native integrations
+- **[graphql-architect](graphql-architect.md)** - Design GraphQL schemas, resolvers, and federation
+- **[architect-reviewer](architect-review.md)** - Reviews code changes for architectural consistency and patterns
 
 ### Language Specialists
-- **python-pro** - Write idiomatic Python code with advanced features and optimizations
-- **golang-pro** - Write idiomatic Go code with goroutines, channels, and interfaces
+- **[python-pro](python-pro.md)** - Write idiomatic Python code with advanced features and optimizations
+- **[golang-pro](golang-pro.md)** - Write idiomatic Go code with goroutines, channels, and interfaces
 
 ### Infrastructure & Operations
-- **devops-troubleshooter** - Debug production issues, analyze logs, and fix deployment failures
-- **deployment-engineer** - Configure CI/CD pipelines, Docker containers, and cloud deployments
-- **cloud-architect** - Design AWS/Azure/GCP infrastructure and optimize cloud costs
-- **database-optimizer** - Optimize SQL queries, design efficient indexes, and handle database migrations
-- **incident-responder** - Handles production incidents with urgency and precision
-- **dx-optimizer** - Developer Experience specialist that improves tooling, setup, and workflows
+- **[devops-troubleshooter](devops-troubleshooter.md)** - Debug production issues, analyze logs, and fix deployment failures
+- **[deployment-engineer](deployment-engineer.md)** - Configure CI/CD pipelines, Docker containers, and cloud deployments
+- **[cloud-architect](cloud-architect.md)** - Design AWS/Azure/GCP infrastructure and optimize cloud costs
+- **[database-optimizer](database-optimizer.md)** - Optimize SQL queries, design efficient indexes, and handle database migrations
+- **[incident-responder](incident-responder.md)** - Handles production incidents with urgency and precision
+- **[dx-optimizer](dx-optimizer.md)** - Developer Experience specialist that improves tooling, setup, and workflows
 
 ### Quality & Security
-- **code-reviewer** - Expert code review for quality, security, and maintainability
-- **security-auditor** - Review code for vulnerabilities and ensure OWASP compliance
-- **test-automator** - Create comprehensive test suites with unit, integration, and e2e tests
-- **performance-engineer** - Profile applications, optimize bottlenecks, and implement caching strategies
-- **debugger** - Debugging specialist for errors, test failures, and unexpected behavior
+- **[code-reviewer](code-reviewer.md)** - Expert code review for quality, security, and maintainability
+- **[security-auditor](security-auditor.md)** - Review code for vulnerabilities and ensure OWASP compliance
+- **[test-automator](test-automator.md)** - Create comprehensive test suites with unit, integration, and e2e tests
+- **[performance-engineer](performance-engineer.md)** - Profile applications, optimize bottlenecks, and implement caching strategies
+- **[debugger](debugger.md)** - Debugging specialist for errors, test failures, and unexpected behavior
 
 ### Data & AI
-- **data-scientist** - Data analysis expert for SQL queries, BigQuery operations, and data insights
-- **data-engineer** - Build ETL pipelines, data warehouses, and streaming architectures
-- **ai-engineer** - Build LLM applications, RAG systems, and prompt pipelines
-- **ml-engineer** - Implement ML pipelines, model serving, and feature engineering
-- **prompt-engineer** - Optimizes prompts for LLMs and AI systems
+- **[data-scientist](data-scientist.md)** - Data analysis expert for SQL queries, BigQuery operations, and data insights
+- **[data-engineer](data-engineer.md)** - Build ETL pipelines, data warehouses, and streaming architectures
+- **[ai-engineer](ai-engineer.md)** - Build LLM applications, RAG systems, and prompt pipelines
+- **[ml-engineer](ml-engineer.md)** - Implement ML pipelines, model serving, and feature engineering
+- **[prompt-engineer](prompt-engineer.md)** - Optimizes prompts for LLMs and AI systems
 
 ### Specialized Domains
-- **api-documenter** - Create OpenAPI/Swagger specs and write developer documentation
-- **payment-integration** - Integrate Stripe, PayPal, and payment processors
-- **quant-analyst** - Build financial models, backtest trading strategies, and analyze market data
-- **legacy-modernizer** - Refactor legacy codebases and implement gradual modernization
-- **context-manager** - Manages context across multiple agents and long-running tasks
+- **[api-documenter](api-documenter.md)** - Create OpenAPI/Swagger specs and write developer documentation
+- **[payment-integration](payment-integration.md)** - Integrate Stripe, PayPal, and payment processors
+- **[quant-analyst](quant-analyst.md)** - Build financial models, backtest trading strategies, and analyze market data
+- **[legacy-modernizer](legacy-modernizer.md)** - Refactor legacy codebases and implement gradual modernization
+- **[context-manager](context-manager.md)** - Manages context across multiple agents and long-running tasks
 
 ## Installation
 
