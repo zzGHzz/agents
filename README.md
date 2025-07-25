@@ -4,7 +4,7 @@ A comprehensive collection of specialized AI subagents for [Claude Code](https:/
 
 ## Overview
 
-This repository contains 23 specialized subagents that extend Claude Code's capabilities. Each subagent is an expert in a specific domain, automatically invoked based on context or explicitly called when needed.
+This repository contains 28 specialized subagents that extend Claude Code's capabilities. Each subagent is an expert in a specific domain, automatically invoked based on context or explicitly called when needed.
 
 ## Available Subagents
 
@@ -13,6 +13,7 @@ This repository contains 23 specialized subagents that extend Claude Code's capa
 - **frontend-developer** - Build React components, implement responsive layouts, and handle client-side state management
 - **mobile-developer** - Develop React Native or Flutter apps with native integrations
 - **graphql-architect** - Design GraphQL schemas, resolvers, and federation
+- **architect-reviewer** - Reviews code changes for architectural consistency and patterns
 
 ### Language Specialists
 - **python-pro** - Write idiomatic Python code with advanced features and optimizations
@@ -23,6 +24,8 @@ This repository contains 23 specialized subagents that extend Claude Code's capa
 - **deployment-engineer** - Configure CI/CD pipelines, Docker containers, and cloud deployments
 - **cloud-architect** - Design AWS/Azure/GCP infrastructure and optimize cloud costs
 - **database-optimizer** - Optimize SQL queries, design efficient indexes, and handle database migrations
+- **incident-responder** - Handles production incidents with urgency and precision
+- **dx-optimizer** - Developer Experience specialist that improves tooling, setup, and workflows
 
 ### Quality & Security
 - **code-reviewer** - Expert code review for quality, security, and maintainability
@@ -36,12 +39,14 @@ This repository contains 23 specialized subagents that extend Claude Code's capa
 - **data-engineer** - Build ETL pipelines, data warehouses, and streaming architectures
 - **ai-engineer** - Build LLM applications, RAG systems, and prompt pipelines
 - **ml-engineer** - Implement ML pipelines, model serving, and feature engineering
+- **prompt-engineer** - Optimizes prompts for LLMs and AI systems
 
 ### Specialized Domains
 - **api-documenter** - Create OpenAPI/Swagger specs and write developer documentation
 - **payment-integration** - Integrate Stripe, PayPal, and payment processors
 - **quant-analyst** - Build financial models, backtest trading strategies, and analyze market data
 - **legacy-modernizer** - Refactor legacy codebases and implement gradual modernization
+- **context-manager** - Manages context across multiple agents and long-running tasks
 
 ## Installation
 
