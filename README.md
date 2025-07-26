@@ -52,6 +52,11 @@ This repository contains 28 specialized subagents that extend Claude Code's capa
 
 These subagents are automatically available when placed in `~/.claude/agents/` directory.
 
+```bash
+cd ~/.claude
+git clone https://github.com/wshobson/agents.git
+```
+
 ## Usage
 
 ### Automatic Invocation
