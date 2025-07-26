@@ -61,6 +61,44 @@ Claude Code will automatically delegate to the appropriate subagent based on the
 Mention the subagent by name in your request:
 ```
 "Use the code-reviewer to check my recent changes"
+"Have the security-auditor scan for vulnerabilities"
+"Get the performance-engineer to optimize this bottleneck"
+```
+
+## Usage Examples
+
+### Single Agent Tasks
+```bash
+# Code quality and review
+"Use code-reviewer to analyze this component for best practices"
+"Have security-auditor check for OWASP compliance issues"
+
+# Development tasks  
+"Get backend-architect to design a user authentication API"
+"Use frontend-developer to create a responsive dashboard layout"
+
+# Infrastructure and operations
+"Have devops-troubleshooter analyze these production logs"
+"Use cloud-architect to design a scalable AWS architecture"
+
+# Data and AI
+"Get data-scientist to analyze this customer behavior dataset"
+"Use ai-engineer to build a RAG system for document search"
+```
+
+### Multi-Agent Workflows
+```bash
+# Feature development workflow
+"Implement user authentication feature"
+# Automatically uses: backend-architect → frontend-developer → test-automator → security-auditor
+
+# Performance optimization workflow  
+"Optimize the checkout process performance"
+# Automatically uses: performance-engineer → database-optimizer → frontend-developer
+
+# Production incident workflow
+"Debug high memory usage in production"
+# Automatically uses: incident-responder → devops-troubleshooter → performance-engineer
 ```
 
 ## Subagent Format
@@ -76,11 +114,90 @@ tools: tool1, tool2  # Optional - defaults to all tools
 System prompt defining the subagent's role and capabilities
 ```
 
+## Agent Orchestration Patterns
+
+Claude Code automatically coordinates agents using these common patterns:
+
+### Sequential Workflows
+```
+User Request → Agent A → Agent B → Agent C → Result
+
+Example: "Build a new API feature"
+backend-architect → frontend-developer → test-automator → security-auditor
+```
+
+### Parallel Execution
+```
+User Request → Agent A + Agent B (simultaneously) → Merge Results
+
+Example: "Optimize application performance" 
+performance-engineer + database-optimizer → Combined recommendations
+```
+
+### Conditional Branching
+```
+User Request → Analysis → Route to appropriate specialist
+
+Example: "Fix this bug"
+debugger (analyzes) → Routes to: backend-architect OR frontend-developer OR devops-troubleshooter
+```
+
+### Review & Validation
+```
+Primary Agent → Review Agent → Final Result
+
+Example: "Implement payment processing"
+payment-integration → security-auditor → Validated implementation
+```
+
+## When to Use Which Agent
+
+### 🏗️ Planning & Architecture
+- **backend-architect**: API design, database schemas, system architecture
+- **frontend-developer**: UI/UX planning, component architecture
+- **cloud-architect**: Infrastructure design, scalability planning
+
+### 🔧 Implementation & Development  
+- **python-pro**: Python-specific development tasks
+- **golang-pro**: Go-specific development tasks
+- **mobile-developer**: React Native/Flutter development
+
+### 🛠️ Operations & Maintenance
+- **devops-troubleshooter**: Production issues, deployment problems
+- **incident-responder**: Critical outages requiring immediate response
+- **database-optimizer**: Query performance, indexing strategies
+
+### 📊 Analysis & Optimization
+- **performance-engineer**: Application bottlenecks, optimization
+- **security-auditor**: Vulnerability scanning, compliance checks
+- **data-scientist**: Data analysis, insights, reporting
+
+### 🧪 Quality Assurance
+- **code-reviewer**: Code quality, maintainability review
+- **test-automator**: Test strategy, test suite creation
+- **debugger**: Bug investigation, error resolution
+
 ## Best Practices
 
-1. **Let Claude Code delegate automatically** - The main agent knows when to use each subagent
-2. **Use explicit invocation for specific needs** - When you want a particular expert's perspective
-3. **Combine multiple subagents** - Complex tasks may benefit from multiple specialists
+### 🎯 Task Delegation
+1. **Let Claude Code delegate automatically** - The main agent analyzes context and selects optimal agents
+2. **Be specific about requirements** - Include constraints, tech stack, and quality requirements
+3. **Trust agent expertise** - Each agent is optimized for their domain
+
+### 🔄 Multi-Agent Workflows
+4. **Start with high-level requests** - Let agents coordinate complex multi-step tasks
+5. **Provide context between agents** - Ensure agents have necessary background information
+6. **Review integration points** - Check how different agents' outputs work together
+
+### 🎛️ Explicit Control
+7. **Use explicit invocation for specific needs** - When you want a particular expert's perspective
+8. **Combine multiple agents strategically** - Different specialists can validate each other's work
+9. **Request specific review patterns** - "Have security-auditor review backend-architect's API design"
+
+### 📈 Optimization
+10. **Monitor agent effectiveness** - Learn which agents work best for your use cases
+11. **Iterate on complex tasks** - Use agent feedback to refine requirements
+12. **Leverage agent strengths** - Match task complexity to agent capabilities
 
 ## Contributing
 
@@ -89,6 +206,34 @@ To add a new subagent:
 2. Use lowercase, hyphen-separated names
 3. Write clear descriptions for when the subagent should be used
 4. Include specific instructions in the system prompt
+
+## Troubleshooting
+
+### Common Issues
+
+**Agent not being invoked automatically:**
+- Ensure your request clearly indicates the domain (e.g., "performance issue" → performance-engineer)
+- Be specific about the task type (e.g., "review code" → code-reviewer)
+
+**Unexpected agent selection:**
+- Provide more context about your tech stack and requirements
+- Use explicit invocation if you need a specific agent
+
+**Multiple agents producing conflicting advice:**
+- This is normal - different specialists may have different priorities
+- Ask for clarification: "Reconcile the recommendations from security-auditor and performance-engineer"
+
+**Agent seems to lack context:**
+- Provide background information in your request
+- Reference previous conversations or established patterns
+
+### Getting Help
+
+If agents aren't working as expected:
+1. Check agent descriptions in their individual files
+2. Try more specific language in your requests
+3. Use explicit invocation to test specific agents
+4. Provide more context about your project and goals
 
 ## Learn More
 
