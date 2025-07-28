@@ -4,7 +4,7 @@ A comprehensive collection of specialized AI subagents for [Claude Code](https:/
 
 ## Overview
 
-This repository contains 33 specialized subagents that extend Claude Code's capabilities. Each subagent is an expert in a specific domain, automatically invoked based on context or explicitly called when needed.
+This repository contains 34 specialized subagents that extend Claude Code's capabilities. Each subagent is an expert in a specific domain, automatically invoked based on context or explicitly called when needed.
 
 ## Available Subagents
 
@@ -38,6 +38,7 @@ This repository contains 33 specialized subagents that extend Claude Code's capa
 - **[test-automator](test-automator.md)** - Create comprehensive test suites with unit, integration, and e2e tests
 - **[performance-engineer](performance-engineer.md)** - Profile applications, optimize bottlenecks, and implement caching strategies
 - **[debugger](debugger.md)** - Debugging specialist for errors, test failures, and unexpected behavior
+- **[error-detective](error-detective.md)** - Search logs and codebases for error patterns, stack traces, and anomalies
 
 ### Data & AI
 - **[data-scientist](data-scientist.md)** - Data analysis expert for SQL queries, BigQuery operations, and data insights
@@ -108,7 +109,7 @@ Mention the subagent by name in your request:
 
 # Production incident workflow
 "Debug high memory usage in production"
-# Automatically uses: incident-responder → devops-troubleshooter → performance-engineer
+# Automatically uses: incident-responder → devops-troubleshooter → error-detective → performance-engineer
 ```
 
 ## Subagent Format
@@ -191,6 +192,7 @@ payment-integration → security-auditor → Validated implementation
 - **code-reviewer**: Code quality, maintainability review
 - **test-automator**: Test strategy, test suite creation
 - **debugger**: Bug investigation, error resolution
+- **error-detective**: Log analysis, error pattern recognition, root cause analysis
 
 ## Best Practices
 
