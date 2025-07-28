@@ -4,7 +4,7 @@ A comprehensive collection of specialized AI subagents for [Claude Code](https:/
 
 ## Overview
 
-This repository contains 37 specialized subagents that extend Claude Code's capabilities. Each subagent is an expert in a specific domain, automatically invoked based on context or explicitly called when needed.
+This repository contains 43 specialized subagents that extend Claude Code's capabilities. Each subagent is an expert in a specific domain, automatically invoked based on context or explicitly called when needed.
 
 ## Available Subagents
 
@@ -41,6 +41,7 @@ This repository contains 37 specialized subagents that extend Claude Code's capa
 - **[performance-engineer](performance-engineer.md)** - Profile applications, optimize bottlenecks, and implement caching strategies
 - **[debugger](debugger.md)** - Debugging specialist for errors, test failures, and unexpected behavior
 - **[error-detective](error-detective.md)** - Search logs and codebases for error patterns, stack traces, and anomalies
+- **[search-specialist](search-specialist.md)** - Expert web researcher using advanced search techniques and synthesis
 
 ### Data & AI
 - **[data-scientist](data-scientist.md)** - Data analysis expert for SQL queries, BigQuery operations, and data insights
@@ -54,8 +55,15 @@ This repository contains 37 specialized subagents that extend Claude Code's capa
 - **[api-documenter](api-documenter.md)** - Create OpenAPI/Swagger specs and write developer documentation
 - **[payment-integration](payment-integration.md)** - Integrate Stripe, PayPal, and payment processors
 - **[quant-analyst](quant-analyst.md)** - Build financial models, backtest trading strategies, and analyze market data
+- **[risk-manager](risk-manager.md)** - Monitor portfolio risk, R-multiples, and position limits
 - **[legacy-modernizer](legacy-modernizer.md)** - Refactor legacy codebases and implement gradual modernization
 - **[context-manager](context-manager.md)** - Manages context across multiple agents and long-running tasks
+
+### Business & Marketing
+- **[business-analyst](business-analyst.md)** - Analyze metrics, create reports, and track KPIs
+- **[content-marketer](content-marketer.md)** - Write blog posts, social media content, and email newsletters
+- **[sales-automator](sales-automator.md)** - Draft cold emails, follow-ups, and proposal templates
+- **[customer-support](customer-support.md)** - Handle support tickets, FAQ responses, and customer emails
 
 ## Installation
 
@@ -101,6 +109,12 @@ Mention the subagent by name in your request:
 "Get data-scientist to analyze this customer behavior dataset"
 "Use ai-engineer to build a RAG system for document search"
 "Have mlops-engineer set up MLflow experiment tracking"
+
+# Business and marketing
+"Have business-analyst create investor deck with growth metrics"
+"Use content-marketer to write SEO-optimized blog post"
+"Get sales-automator to create cold email sequence"
+"Have customer-support draft FAQ documentation"
 ```
 
 ### Multi-Agent Workflows
@@ -131,6 +145,10 @@ These subagents work together seamlessly, and for more complex orchestrations, y
 # ML pipeline workflow
 "Build end-to-end ML pipeline with monitoring"
 # Automatically uses: mlops-engineer → ml-engineer → data-engineer → performance-engineer
+
+# Product launch workflow
+"Launch new feature with marketing campaign"
+# Automatically uses: business-analyst → content-marketer → sales-automator → customer-support
 ```
 
 ### Advanced Workflows with Slash Commands
@@ -235,6 +253,14 @@ payment-integration → security-auditor → Validated implementation
 - **test-automator**: Test strategy, test suite creation
 - **debugger**: Bug investigation, error resolution
 - **error-detective**: Log analysis, error pattern recognition, root cause analysis
+- **search-specialist**: Deep web research, competitive analysis, fact-checking
+
+### 💼 Business & Strategy
+- **business-analyst**: KPIs, revenue models, growth projections, investor metrics
+- **risk-manager**: Portfolio risk, hedging strategies, R-multiples, position sizing
+- **content-marketer**: SEO content, blog posts, social media, email campaigns
+- **sales-automator**: Cold emails, follow-ups, proposals, lead nurturing
+- **customer-support**: Support tickets, FAQs, help documentation, troubleshooting
 
 ## Best Practices
 
