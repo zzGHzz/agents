@@ -4,7 +4,7 @@ A comprehensive collection of specialized AI subagents for [Claude Code](https:/
 
 ## Overview
 
-This repository contains 28 specialized subagents that extend Claude Code's capabilities. Each subagent is an expert in a specific domain, automatically invoked based on context or explicitly called when needed.
+This repository contains 33 specialized subagents that extend Claude Code's capabilities. Each subagent is an expert in a specific domain, automatically invoked based on context or explicitly called when needed.
 
 ## Available Subagents
 
@@ -18,12 +18,17 @@ This repository contains 28 specialized subagents that extend Claude Code's capa
 ### Language Specialists
 - **[python-pro](python-pro.md)** - Write idiomatic Python code with advanced features and optimizations
 - **[golang-pro](golang-pro.md)** - Write idiomatic Go code with goroutines, channels, and interfaces
+- **[rust-pro](rust-pro.md)** - Write idiomatic Rust with ownership patterns, lifetimes, and trait implementations
+- **[c-pro](c-pro.md)** - Write efficient C code with proper memory management and system calls
+- **[javascript-pro](javascript-pro.md)** - Master modern JavaScript with ES6+, async patterns, and Node.js APIs
+- **[sql-pro](sql-pro.md)** - Write complex SQL queries, optimize execution plans, and design normalized schemas
 
 ### Infrastructure & Operations
 - **[devops-troubleshooter](devops-troubleshooter.md)** - Debug production issues, analyze logs, and fix deployment failures
 - **[deployment-engineer](deployment-engineer.md)** - Configure CI/CD pipelines, Docker containers, and cloud deployments
 - **[cloud-architect](cloud-architect.md)** - Design AWS/Azure/GCP infrastructure and optimize cloud costs
 - **[database-optimizer](database-optimizer.md)** - Optimize SQL queries, design efficient indexes, and handle database migrations
+- **[terraform-specialist](terraform-specialist.md)** - Write advanced Terraform modules, manage state files, and implement IaC best practices
 - **[incident-responder](incident-responder.md)** - Handles production incidents with urgency and precision
 - **[dx-optimizer](dx-optimizer.md)** - Developer Experience specialist that improves tooling, setup, and workflows
 
@@ -165,12 +170,17 @@ payment-integration → security-auditor → Validated implementation
 ### 🔧 Implementation & Development  
 - **python-pro**: Python-specific development tasks
 - **golang-pro**: Go-specific development tasks
+- **rust-pro**: Rust-specific development, memory safety, systems programming
+- **c-pro**: C programming, embedded systems, performance-critical code
+- **javascript-pro**: Modern JavaScript, async patterns, Node.js/browser code
+- **sql-pro**: Database queries, schema design, query optimization
 - **mobile-developer**: React Native/Flutter development
 
 ### 🛠️ Operations & Maintenance
 - **devops-troubleshooter**: Production issues, deployment problems
 - **incident-responder**: Critical outages requiring immediate response
 - **database-optimizer**: Query performance, indexing strategies
+- **terraform-specialist**: Infrastructure as Code, Terraform modules, state management
 
 ### 📊 Analysis & Optimization
 - **performance-engineer**: Application bottlenecks, optimization
