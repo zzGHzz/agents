@@ -4,7 +4,7 @@ A comprehensive collection of specialized AI subagents for [Claude Code](https:/
 
 ## Overview
 
-This repository contains 36 specialized subagents that extend Claude Code's capabilities. Each subagent is an expert in a specific domain, automatically invoked based on context or explicitly called when needed.
+This repository contains 37 specialized subagents that extend Claude Code's capabilities. Each subagent is an expert in a specific domain, automatically invoked based on context or explicitly called when needed.
 
 ## Available Subagents
 
@@ -47,6 +47,7 @@ This repository contains 36 specialized subagents that extend Claude Code's capa
 - **[data-engineer](data-engineer.md)** - Build ETL pipelines, data warehouses, and streaming architectures
 - **[ai-engineer](ai-engineer.md)** - Build LLM applications, RAG systems, and prompt pipelines
 - **[ml-engineer](ml-engineer.md)** - Implement ML pipelines, model serving, and feature engineering
+- **[mlops-engineer](mlops-engineer.md)** - Build ML pipelines, experiment tracking, and model registries
 - **[prompt-engineer](prompt-engineer.md)** - Optimizes prompts for LLMs and AI systems
 
 ### Specialized Domains
@@ -99,6 +100,7 @@ Mention the subagent by name in your request:
 # Data and AI
 "Get data-scientist to analyze this customer behavior dataset"
 "Use ai-engineer to build a RAG system for document search"
+"Have mlops-engineer set up MLflow experiment tracking"
 ```
 
 ### Multi-Agent Workflows
@@ -122,6 +124,10 @@ Mention the subagent by name in your request:
 # Database maintenance workflow
 "Set up disaster recovery for production database"
 # Automatically uses: database-admin → database-optimizer → incident-responder
+
+# ML pipeline workflow
+"Build end-to-end ML pipeline with monitoring"
+# Automatically uses: mlops-engineer → ml-engineer → data-engineer → performance-engineer
 ```
 
 ## Subagent Format
@@ -201,6 +207,7 @@ payment-integration → security-auditor → Validated implementation
 - **performance-engineer**: Application bottlenecks, optimization
 - **security-auditor**: Vulnerability scanning, compliance checks
 - **data-scientist**: Data analysis, insights, reporting
+- **mlops-engineer**: ML infrastructure, experiment tracking, model registries, pipeline automation
 
 ### 🧪 Quality Assurance
 - **code-reviewer**: Code quality, maintainability review
