@@ -4,7 +4,7 @@ A comprehensive collection of specialized AI subagents for [Claude Code](https:/
 
 ## Overview
 
-This repository contains 34 specialized subagents that extend Claude Code's capabilities. Each subagent is an expert in a specific domain, automatically invoked based on context or explicitly called when needed.
+This repository contains 35 specialized subagents that extend Claude Code's capabilities. Each subagent is an expert in a specific domain, automatically invoked based on context or explicitly called when needed.
 
 ## Available Subagents
 
@@ -30,6 +30,7 @@ This repository contains 34 specialized subagents that extend Claude Code's capa
 - **[database-optimizer](database-optimizer.md)** - Optimize SQL queries, design efficient indexes, and handle database migrations
 - **[terraform-specialist](terraform-specialist.md)** - Write advanced Terraform modules, manage state files, and implement IaC best practices
 - **[incident-responder](incident-responder.md)** - Handles production incidents with urgency and precision
+- **[network-engineer](network-engineer.md)** - Debug network connectivity, configure load balancers, and analyze traffic patterns
 - **[dx-optimizer](dx-optimizer.md)** - Developer Experience specialist that improves tooling, setup, and workflows
 
 ### Quality & Security
@@ -91,6 +92,7 @@ Mention the subagent by name in your request:
 # Infrastructure and operations
 "Have devops-troubleshooter analyze these production logs"
 "Use cloud-architect to design a scalable AWS architecture"
+"Get network-engineer to debug SSL certificate issues"
 
 # Data and AI
 "Get data-scientist to analyze this customer behavior dataset"
@@ -110,6 +112,10 @@ Mention the subagent by name in your request:
 # Production incident workflow
 "Debug high memory usage in production"
 # Automatically uses: incident-responder → devops-troubleshooter → error-detective → performance-engineer
+
+# Network connectivity workflow
+"Fix intermittent API timeouts"
+# Automatically uses: network-engineer → devops-troubleshooter → performance-engineer
 ```
 
 ## Subagent Format
@@ -182,6 +188,7 @@ payment-integration → security-auditor → Validated implementation
 - **incident-responder**: Critical outages requiring immediate response
 - **database-optimizer**: Query performance, indexing strategies
 - **terraform-specialist**: Infrastructure as Code, Terraform modules, state management
+- **network-engineer**: Network connectivity, load balancers, SSL/TLS, DNS debugging
 
 ### 📊 Analysis & Optimization
 - **performance-engineer**: Application bottlenecks, optimization
