@@ -4,7 +4,7 @@ A comprehensive collection of specialized AI subagents for [Claude Code](https:/
 
 ## Overview
 
-This repository contains 35 specialized subagents that extend Claude Code's capabilities. Each subagent is an expert in a specific domain, automatically invoked based on context or explicitly called when needed.
+This repository contains 36 specialized subagents that extend Claude Code's capabilities. Each subagent is an expert in a specific domain, automatically invoked based on context or explicitly called when needed.
 
 ## Available Subagents
 
@@ -28,6 +28,7 @@ This repository contains 35 specialized subagents that extend Claude Code's capa
 - **[deployment-engineer](deployment-engineer.md)** - Configure CI/CD pipelines, Docker containers, and cloud deployments
 - **[cloud-architect](cloud-architect.md)** - Design AWS/Azure/GCP infrastructure and optimize cloud costs
 - **[database-optimizer](database-optimizer.md)** - Optimize SQL queries, design efficient indexes, and handle database migrations
+- **[database-admin](database-admin.md)** - Manage database operations, backups, replication, and monitoring
 - **[terraform-specialist](terraform-specialist.md)** - Write advanced Terraform modules, manage state files, and implement IaC best practices
 - **[incident-responder](incident-responder.md)** - Handles production incidents with urgency and precision
 - **[network-engineer](network-engineer.md)** - Debug network connectivity, configure load balancers, and analyze traffic patterns
@@ -93,6 +94,7 @@ Mention the subagent by name in your request:
 "Have devops-troubleshooter analyze these production logs"
 "Use cloud-architect to design a scalable AWS architecture"
 "Get network-engineer to debug SSL certificate issues"
+"Use database-admin to set up backup and replication"
 
 # Data and AI
 "Get data-scientist to analyze this customer behavior dataset"
@@ -116,6 +118,10 @@ Mention the subagent by name in your request:
 # Network connectivity workflow
 "Fix intermittent API timeouts"
 # Automatically uses: network-engineer → devops-troubleshooter → performance-engineer
+
+# Database maintenance workflow
+"Set up disaster recovery for production database"
+# Automatically uses: database-admin → database-optimizer → incident-responder
 ```
 
 ## Subagent Format
@@ -187,6 +193,7 @@ payment-integration → security-auditor → Validated implementation
 - **devops-troubleshooter**: Production issues, deployment problems
 - **incident-responder**: Critical outages requiring immediate response
 - **database-optimizer**: Query performance, indexing strategies
+- **database-admin**: Backup strategies, replication, user management, disaster recovery
 - **terraform-specialist**: Infrastructure as Code, Terraform modules, state management
 - **network-engineer**: Network connectivity, load balancers, SSL/TLS, DNS debugging
 
