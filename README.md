@@ -104,6 +104,9 @@ Mention the subagent by name in your request:
 ```
 
 ### Multi-Agent Workflows
+
+These subagents work together seamlessly, and for more complex orchestrations, you can use the **[Claude Code Commands](https://github.com/wshobson/commands)** collection which provides 52 pre-built slash commands that leverage these subagents in sophisticated workflows.
+
 ```bash
 # Feature development workflow
 "Implement user authentication feature"
@@ -128,6 +131,24 @@ Mention the subagent by name in your request:
 # ML pipeline workflow
 "Build end-to-end ML pipeline with monitoring"
 # Automatically uses: mlops-engineer → ml-engineer → data-engineer → performance-engineer
+```
+
+### Advanced Workflows with Slash Commands
+
+For more sophisticated multi-subagent orchestration, use the companion [Commands repository](https://github.com/wshobson/commands):
+
+```bash
+# Complex feature development (8+ subagents)
+/full-stack-feature Build user dashboard with real-time analytics
+
+# Production incident response (5+ subagents) 
+/incident-response Database connection pool exhausted
+
+# ML infrastructure setup (6+ subagents)
+/ml-pipeline Create recommendation engine with A/B testing
+
+# Security-focused implementation (7+ subagents)
+/security-hardening Implement OAuth2 with zero-trust architecture
 ```
 
 ## Subagent Format
