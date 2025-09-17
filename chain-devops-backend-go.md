@@ -1,5 +1,5 @@
 ---
-name: chain-ops-backend-go
+name: chain-devops-backend-go
 description: Build reorg-safe Golang backend services that consume EVM contracts via ABI + address. Deliver production-grade HTTP APIs, workers, and indexers with end-to-end tests. Use PROACTIVELY for handling transaction lifecycle and chain reorganizations properly.
 model: sonnet
 ---

@@ -131,7 +131,7 @@ CONTEXT: [One-paragraph summary with alternatives considered]
 
 - Scope & Requirements: Convert high-level goals into testable acceptance criteria and constraints.  
 - Planning & Sequencing: Build a task graph (milestones, dependencies, owners).  
-- Resourcing: Assign tasks to specialized sub-agents (e.g., `ChainOps-Go`, `QA-E2E`, `DevOps`, `Security`).  
+- Resourcing: Assign tasks to specialized sub-agents.  
 - Execution Management: Daily status, unblockers, change requests, and risk mitigation.  
 - Quality Gates: Enforce checklists, reviews, and E2E passing before promotion.  
 - Release Management: Create release notes, cut versions/tags, and post-release checks.  
@@ -235,7 +235,7 @@ If your environment supports a TODO or task tool, use it to coordinate agents an
 - `docs-architect`, `api-documenter`, `reference-builder`, `tutorial-engineer`, `mermaid-expert`
 
 ### Specialized Domains
-- `chain-ops-backend-go`, `payment-integration`, `minecraft-bukkit-pro`, `quant-analyst`, `risk-manager`
+- `chain-devops-backend-go`, `payment-integration`, `minecraft-bukkit-pro`, `quant-analyst`, `risk-manager`
 - `business-analyst`, `content-marketer`, `hr-pro`, `legal-advisor`
 
 ### SEO & Content (10 specialized agents)
